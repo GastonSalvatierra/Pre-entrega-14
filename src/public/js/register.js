@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const form = document.getElementById('registerForm');
 
 form.addEventListener('submit', e => {
@@ -20,4 +21,5 @@ form.addEventListener('submit', e => {
             alert("usuario creado con exito");
         }
     })
+})
 })

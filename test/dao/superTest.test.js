@@ -45,14 +45,14 @@ describe("----TEST DE SESION EN LA APP---", () => {
 
                 //PARA LAS SIGUIENTES PRUEBAS COMENTAR ESTE FRAGMENTO DE CODIGO
 
-               /*  //THEN
+                //THEN
                 let result = await requester.post('/api/session/register').send(userMock);
                 console.log(result);
 
                 //ASSERT
                 expect (result.statusCode).is.equals(200);
                 expect (result.statusCode).is.be.ok
-                expect(result.body.status).to.equal('success'); */
+                expect(result.body.status).to.equal('success');
 
                 //COMENTAR HASTA ACA. NO SE HABILITA LA SESSION. DEBIDO AL BEFOREEACH NO PUEDO ELIMINAR EL USUARIO YA CREADO. 
             })

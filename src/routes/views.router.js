@@ -8,7 +8,7 @@ router.get('/message', (req, res) => {
 })
 
 router.get('/', (req, res) => {
-    res.render('login')
+    res.render('login', {style:'main.css'})
 });
 
 router.get("/register", (req, res) => {

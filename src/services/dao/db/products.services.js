@@ -20,7 +20,7 @@ export default class productService{
 
         if (!page) page = 1;
 
-        let result = await productsModel.paginate({}, { page, limit: 2, lean: true })
+        let result = await productsModel.paginate({}, { page, limit: 3, lean: true })
 
         result.prevLink = result.hasPrevPage ? `http://localhost:8080/api/products/pages/${result.prevPage}` : '';
         result.nextLink = result.hasNextPage ? `http://localhost:8080/api/products/pages/${result.nextPage}` : '';

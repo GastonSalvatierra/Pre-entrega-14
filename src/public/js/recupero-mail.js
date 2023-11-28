@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", () => {
+
 const form = document.getElementById('recuperoForm');
 
 form.addEventListener('submit', e => {
@@ -42,4 +44,6 @@ form.addEventListener('submit', e => {
         // Manejar errores de las tres solicitudes
         console.error('Error en las solicitudes:', error);
     });
-});
+})
+
+})

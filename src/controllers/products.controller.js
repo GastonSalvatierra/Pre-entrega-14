@@ -77,7 +77,6 @@ export const logOut = async (req, res) => {
         } else {
           // Redirige al usuario a la página de inicio de sesión después de destruir la sesión
           res.status(200).send({message: "sesion cerrada con exito."});
-          res.redirect('/');
         }
       });
 }
