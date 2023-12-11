@@ -18,7 +18,14 @@ const schema = new mongoose.Schema({
         type: Array, 
         default: []
     },     
-    password: String //hasheado
+    password: String,
+    documents: [
+        {name: String}, 
+        {reference:String}
+    ],
+    last_connection : {
+        type:Boolean,
+    }
 })
 
 const userModel = mongoose.model(collection, schema);

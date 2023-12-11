@@ -54,7 +54,8 @@ export const userLogin = async (req, res) => {
         email: user.email,
         age: user.age,
         role: user.role,
-        cart: user._id
+        cart: user._id,
+        last_connection: user.status = true
     }
 
     console.log(`-------${JSON.stringify(req.session)}-------`);
